@@ -1,0 +1,23 @@
+.tools
+  display: flex
+  align-items: center
+
+  &__button
+    width: 16px
+    height: 16px
+    margin: 0 10px
+
+    &_refresh
+      @extend .icons-refresh
+
+    &_more
+      height: 10px
+      @extend .icons-more
+
+    &_close
+      @extend .icons-close
+
+@media screen and (max-width: $mobile)
+  .tools
+    &__button
+      margin: 0 5px

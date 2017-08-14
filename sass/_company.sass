@@ -1,0 +1,27 @@
+.company
+  display: flex
+  justify-content: center
+  padding: 40px 30px
+  background: linear-gradient(to top, $gradient-first, $gradient-second)
+
+  &__avatar
+    width: 60px
+    height: 60px
+    margin: 0
+    border-radius: 50%
+    overflow: hidden
+
+  &__titles
+    flex-direction: column
+    justify-content: center
+    display: none
+    
+  &__user
+    font-size: 20px
+
+  &__name
+    font-size: 16px
+
+@media screen and (max-width: $desktop)
+  .company
+    padding: 10px 20px

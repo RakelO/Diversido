@@ -1,0 +1,52 @@
+.header
+  display: flex
+  width: calc(100% - #{$collapsed-width})
+  background: $header-bg
+  color: $white
+  position: fixed
+  top: 0
+  right: 0
+
+  &__info
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 25px 25px 25px 40px
+
+  &__folders
+    line-height: 30px
+
+  &__select
+    height: 30px
+    padding: 0 25px
+    margin-left: 20px
+    border: none
+    border-radius: 2px
+
+@media screen and (max-width: $desktop)
+  .header
+    &__folders
+      display: none
+
+    &__info
+      justify-content: flex-end
+    
+@media screen and (max-width: $tablet)
+  .header
+    &__select-label
+      display: none
+
+    &__info
+      padding: 10px
+      padding-right: $toggle-size + 5px
+      min-height: 50px
+      justify-content: center
+
+@media screen and (max-width: $mobile)
+  .header
+    width: calc(100% - #{$logo-mobile-width})
+    z-index: 2
+
+    &__select
+      margin: 0
+      padding: 0 5px

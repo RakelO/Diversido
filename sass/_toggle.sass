@@ -1,0 +1,29 @@
+.toggle
+  @extend .icons-menu
+  width: $toggle-size
+  height: $toggle-size
+  position: absolute
+  border-radius: 50%
+  background-color: $secondary-light
+  background-position: 8px -85px
+  top: ($logo-mobile-width - $toggle-size) / 2
+
+  &_aside
+    //display: none
+    position: fixed
+    transform: rotate(180deg)
+    left: $expanded-width
+    margin-left: - $toggle-size/2
+
+  &_header
+    left: 0
+    margin-left: - $toggle-size/2
+
+@media screen and (max-width: $tablet)
+  .toggle
+    left: 100%
+    top: 5px
+    margin-left: - $toggle-size - 5px
+
+    &_header
+      left: 100%

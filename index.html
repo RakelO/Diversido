@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Diversido</title>
+    <link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <aside class="aside">
+      <a href="#" class="logo"></a>
+      <button class="toggle toggle_aside js-toggle"></button>
+      <div class="aside__content">
+        <div class="company">
+          <div class="company__avatar">
+            <img src="images/avatar.jpg" alt="avatar">
+          </div>
+          <div class="company__titles">
+            <h3 class="company__user">User Name</h3>
+            <h4 class="company__name">Company name</h4>
+          </div>
+        </div>
+        <h2 class="aside__title">General</h2>
+        <nav>
+          <ul class="nav-first-level">
+            <li class="nav-first-level__item">
+              <a href="#" class="nav-first-level__link nav-first-level__link_dashboard js-show-dashboards">
+                <span class="nav-first-level__link-name">Dashboard</span>
+              </a>
+              <ul class="nav-second-level">
+                <li class="nav-second-level__item"><a href="#" class="nav-second-level__link nav-second-level__link_db1">Dashboard 1</a></li>
+                <li class="nav-second-level__item"><a href="#" class="nav-second-level__link nav-second-level__link_db2">Dashboard 2</a></li>
+                <li class="nav-second-level__item"><a href="#" class="nav-second-level__link nav-second-level__link_db3">Dashboard 3</a></li>
+                <li class="nav-second-level__item"><a href="#" class="nav-second-level__link nav-second-level__link_db4">Comming Soon</a></li>
+              </ul>
+            </li>
+            <li class="nav-first-level__item">
+              <a href="#" class="nav-first-level__link nav-first-level__link_layouts">
+                <span class="nav-first-level__link-name">Layouts</span>
+              </a>
+            </li>
+            <li class="nav-first-level__item">
+              <a href="#" class="nav-first-level__link nav-first-level__link_pages">
+                <span class="nav-first-level__link-name">Pages</span>
+              </a>
+            </li>
+            <li class="nav-first-level__item">
+              <a href="#" class="nav-first-level__link nav-first-level__link_messages">
+                <span class="nav-first-level__link-name">Message</span>
+                <span class="nav-first-level__messages_count">09</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <!-- <div class="wrap"> -->
+      <header class="header">
+        <button class="toggle toggle_header js-toggle"></button>
+        <div class="header__info">
+          <div class="header__folders">
+            Dashboard / Home / All Site View
+          </div>
+          <label>
+            <span class="header__select-label">Reporting Period</span>
+            <select name="period" class="header__select">
+              <option value="Last 30 Day’s">Last 30 Day’s ?</option>
+            </select>
+          </label>
+        </div>
+      </header>
+      <main class="dashboard-content">
+        <div class="dashboard-content__item">
+          <div class="dashboard-content__title">
+            <h3>Recent order</h3>
+            <div class="tools">
+              <button class="tools__button tools__button_refresh"></button>
+              <button class="tools__button tools__button_more"></button>
+              <button class="tools__button tools__button_close"></button>
+            </div>
+          </div>
+          <div class="dashboard-content__table">
+            <table class="table">
+              <thead class="table__head">
+                <tr class="table__row">
+                  <th class="table__cell table__cell_head table__cell_img">Image</th>
+                  <th class="table__cell table__cell_head table__cell_name">ProductName</th>
+                  <th class="table__cell table__cell_head table__cell_code">Product Code</th>
+                  <th class="table__cell table__cell_head table__cell_status">Status</th>
+                  <th class="table__cell table__cell_head table__cell_date">Purchased On</th>
+                  <th class="table__cell table__cell_head table__cell_price">Price</th>
+                  <th class="table__cell table__cell_head table__cell_quantity">Quantity</th>
+                  <th class="table__cell table__cell_head table__cell_number">Tracking No#</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__row">
+                  <td class="table__cell table__cell_img">
+                    <img src="images/picture1.jpg" alt="product1">
+                  </td>
+                  <td class="table__cell table__cell_name">Your Product Title Here</td>
+                  <td class="table__cell table__cell_code">3BSD59</td>
+                  <td class="table__cell table__cell_status">Paid</td>
+                  <td class="table__cell table__cell_date">27 Sep 2015</td>
+                  <td class="table__cell table__cell_price">$99.00</td>
+                  <td class="table__cell table__cell_quantity">2</td>
+                  <td class="table__cell table__cell_number">#BG6R9853LP</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell table__cell_img">
+                    <img src="images/picture2.jpg" alt="product2">
+                  </td>
+                  <td class="table__cell table__cell_name">Your Product Title Here</td>
+                  <td class="table__cell table__cell_code">3BH87G</td>
+                  <td class="table__cell table__cell_status">Pending</td>
+                  <td class="table__cell table__cell_date">08 Sep 2015</td>
+                  <td class="table__cell table__cell_price">$99.00</td>
+                  <td class="table__cell table__cell_quantity">2</td>
+                  <td class="table__cell table__cell_number">#368QRM83B</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    <!-- </div> -->
+    <script src="javascripts/main.js"></script>
+  </body>
+</html>

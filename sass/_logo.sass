@@ -1,0 +1,27 @@
+.logo
+  display: flex
+  width: $collapsed-width
+  height: 80px
+  background-color: $main-dark
+  justify-content: center
+  align-items: center
+  padding: 0
+  position: fixed
+  top: 0
+
+  &::before
+    content: ''
+    width: 24px
+    height: 28px
+    background-image: url('../images/company-small.png')
+    background-repeat: no-repeat
+
+@media screen and (max-width: $tablet)
+  .logo
+    width: $collapsed-width
+    height: 50px
+    z-index: 2
+
+@media screen and (max-width: $mobile)
+  .logo
+    width: $logo-mobile-width

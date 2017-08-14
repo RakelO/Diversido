@@ -1,0 +1,84 @@
+=expanded
+  width: $expanded-width
+  z-index: 2
+
+  & ~ .header
+    width: calc(100% - #{$expanded-width})
+
+  .toggle
+    &_aside
+      z-index: 3
+
+  .aside
+    &__title
+      z-index: 3
+
+    &__content
+      width: $expanded-width
+
+  .logo
+    width: $expanded-width
+    &::before
+      width: 170px
+      height: 32px
+      background-image: url('../images/company.png')
+      padding-left: 30px
+
+  .company
+    justify-content: flex-start
+    &__avatar
+      margin-right: 20px
+
+    &__titles
+      display: flex
+
+  .nav-first-level
+    
+    &__link
+      justify-content: flex-start
+      padding-left: 22px
+
+      &_dashboard
+        &::after
+          content: ''
+
+      &-name
+        display: block
+
+      &::before
+        margin-right: 22px
+
+    &__messages_count
+      position: static
+
+  .active + .nav-second-level
+    display: block
+
+.expanded
+  +expanded
+
+@media screen and (max-width: $tablet)
+  .expanded
+
+    .aside
+      &__content
+        width: 100%
+    
+    & + .header .header__select
+      display: none
+
+@media screen and (max-width: $mobile)
+  .expanded
+    width: 100%
+    .logo
+      width: 100%
+    .aside
+      &__content
+        display: block
+
+    & + .header
+      display: none
+
+@media screen and (min-width: $tablet)
+  .aside:hover
+    +expanded

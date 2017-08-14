@@ -1,0 +1,98 @@
+.nav-second-level
+  display: none
+  padding: 20px 0 20px 86px
+  background-color: $aside-active
+
+  &__link
+    display: flex
+    align-items: center
+    line-height: 40px
+
+    &::before
+      content: ''
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      margin-right: 10px
+      border-width: 3px
+      border-style: solid
+
+    &_db1
+      &::before
+        border-color: $dashboard1
+
+    &_db2
+      &::before
+        border-color: $dashboard2
+
+    &_db3
+      &::before
+        border-color: $dashboard3
+
+    &_db4
+      &::before
+        border-color: $dashboard4
+
+.nav-first-level
+
+  &__link
+    padding: 0
+    justify-content: center
+    height: 68px
+    display: flex
+    align-items: center
+    border-left: 8px solid transparent
+
+    &::before
+      content: ''
+      width: 35px
+      height: 30px
+      margin: 0
+
+    &-name
+      display: none
+      width: 172px
+
+    &_dashboard
+      &::before
+        @extend .icons-dashboard
+      &::after
+        width: 12px
+        height: 8px
+        @extend .icons-moreWhite
+
+
+    &_layouts
+      &::before
+        height: 25px
+        @extend .icons-layouts
+
+    &_pages
+      &::before
+        height: 20px
+        @extend .icons-pages
+
+    &_messages
+      &::before
+        height: 25px
+        @extend .icons-messages
+
+    &_messages
+      position: relative
+
+  &__messages_count
+    display: flex
+    width: 28px
+    height: 20px
+    position: absolute
+    top: 25%
+    right: 22%
+    border-radius: 8px
+    background-color: $dashboard1
+    font-size: 12px
+    align-items: center
+    justify-content: center
+
+.active
+  background-color: $aside-active
+  border-color: $secondary-light
